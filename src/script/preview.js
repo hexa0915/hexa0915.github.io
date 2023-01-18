@@ -20,8 +20,9 @@ function onYouTubePlayerAPIReady() {
             mute: 1,
             showInfo: 0,
             modestbranding: 1,
+            playlist: 'nUrYVH4BE2A',
             rel: 0,
-            playsinline: 1
+            loop: 1
         }
     })
 }
@@ -29,6 +30,18 @@ function onYouTubePlayerAPIReady() {
 function onPlayerReady(event) {
     event.target.setPlaybackQuality('hd720')
     event.target.playVideo()
+
+    event.target.setVolume(0)
+    event.target.unMute()
+
+    setTimeout(volumeUp, 1, 0, event)
+}
+
+function volumeUp(volume, event) {
+    event.target.setVolume(volume + 1)
+    if (volume < 10) {
+        setTimeout(volumeUp, 1, volume + 1, event)
+    }
 }
 
 function onStateChange(event) {
