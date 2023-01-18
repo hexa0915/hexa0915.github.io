@@ -29,8 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     
-    overflow: hidden;
-    background-color: black;
+    overflow-x: hidden;
 }
 
 .preview {
@@ -38,11 +37,13 @@ body {
     height: calc(100vw / 16 * 9);
     user-select: none;
     
-    filter: blur(3px);
+    filter: blur(-1px);
     position: absolute;
     top: 0px;
     z-index: -9999;
-    transform: translateY(32px) scale(1.1);
+
+    background-color: black;
+    border-width: 0px;
 }
 
 .preview-cover {
@@ -53,7 +54,6 @@ body {
     height: calc(100vw / 16 * 9);
     left: 0px;
     top: 0px;
-    transform: translateY(32px) scale(1.1);
     background-color: rgba(0, 0, 0, 0.2);
     user-select: none;
 }
