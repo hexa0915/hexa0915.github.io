@@ -20,9 +20,8 @@ function onYouTubePlayerAPIReady() {
             mute: 1,
             showInfo: 0,
             modestbranding: 1,
-            playlist: 'nUrYVH4BE2A',
             rel: 0,
-            loop: 1
+            playsinline: 1
         }
     })
 }
