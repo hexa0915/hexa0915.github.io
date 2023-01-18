@@ -34,8 +34,7 @@ function onPlayerReady(event) {
 function onStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
         document.querySelector('#preview-cover').style.backgroundColor = "rgba(0, 0, 0, 1)"
-        previewPlayer.loadVideoById('nUrYVH4BE2A', 0, 'hd720')
-        previewPlayer.seekTo(5.67)
+        previewPlayer.loadVideoById('nUrYVH4BE2A', 5.67, 'hd720')
         document.querySelector('#preview-cover').style.backgroundColor = "rgba(0, 0, 0, 0.2)"
     }
 }
