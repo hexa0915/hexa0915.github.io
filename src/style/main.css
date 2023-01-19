@@ -91,6 +91,35 @@ body {
     opacity: 0.4;
 }
 
+.view-full {
+    width: 400px;
+    height: 48px;
+
+    color: white;
+    font-family: 'SUIT Variable', sans-serif;
+    font-variation-settings: 'wght' 800;
+    font-size: 40px;
+
+    border: 5px solid white;
+    border-radius: 40px;
+    text-align: center;
+
+    padding-top: 8px;
+    padding-bottom: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.view-full:hover {
+    background-color: rgba(192, 192, 192);
+    color: rgb(64, 64, 64);
+}
+
 @font-face {
     font-family: 둥근모꼴;
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
