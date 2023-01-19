@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 previewCover.style.transform = `scale(1)`
             }
         } else {
-            document.write("MOBILE")
-            previewCover.style.opacity = '0.2'
+            previewCover.style.opacity = 0.3
         }
 
         requestAnimationFrame(previewSize)

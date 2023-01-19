@@ -13,5 +13,5 @@ function detectMobileDevice(agent) {
 
 let isMobile = false
 document.addEventListener("DOMContentLoaded", (event) => {
-    const isMobile = detectMobileDevice(window.navigator.userAgent)
+    isMobile = detectMobileDevice(window.navigator.userAgent)
 })
