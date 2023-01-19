@@ -1,17 +1,34 @@
-#team-name {
+#team-logo {
     display: inline-block;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 800;
-    position: relative;
-    left: 50%;
-    color: white;
-    transform: translateX(-50%);
+
+    width: 100%;
+    transform: translateY(calc(-50% + 90px + 3.2%));
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.8));
+    aspect-ratio: auto 3300 / 5100;
+}
+
+#team-title {
+    display: inline-block;
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    width: 25vw;
+    height: 180px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #desc {
     display: block;
     
     padding-left: 1%;
+    padding-top: 5px;
     color: white;
     
     font-family: 둥근모꼴;
@@ -19,7 +36,7 @@
 }
 
 #desc * {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-bottom: 10px;
 }
 
