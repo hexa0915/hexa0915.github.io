@@ -112,6 +112,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    cursor: pointer;
+    user-select: none;
     transition: background-color 0.2s, color 0.2s;
 }
 
