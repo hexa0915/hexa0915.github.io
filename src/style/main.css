@@ -37,26 +37,40 @@ body {
     width: 100vw;
     height: 100vh;
     user-select: none;
+
+    display: inline-block;
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    z-index: -10000;
+    overflow: hidden;
+}
+
+#preview * {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+}
+
+#preview-video {
+    width: 100vw;
+    height: 100vh;
     
     filter: blur(3px);
-    position: absolute;
-    top: 0px;
-    z-index: -9999;
-
-    background-color: black;
     border-width: 0px;
+
+    z-index: -9999;
+    background-color: black;
 }
 
 #preview-cover {
     z-index: -9998;
-    position: absolute;
-    display: inline-block;
-    width: 100vw;
-    height: 100vh;
-    left: 0px;
-    top: 0px;
     background-color: rgba(0, 0, 0, 0.4);
-    user-select: none;
 }
 
 @font-face {

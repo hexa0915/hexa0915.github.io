@@ -11,6 +11,7 @@
         
         <link rel='stylesheet' href='src/style/main.css'>
         
+        <script src='src/script/mobile.js'></script>
         <script src='src/script/preview.js'></script>
     </head>
     
@@ -22,9 +23,11 @@
             <p>Have fun!</p>
         </div>
         
-        <div id="preview-cover"></div>
-        <video id="preview" width=1280 height=720 autoplay muted loop>
-            <source src="https://hexa0915.github.io/storage/videos/preview.mp4" type="video/mp4">
-        </video>
+        <div id="preview">
+            <div id="preview-cover"></div>
+            <video id="preview-video" width=1280 height=720 autoplay muted loop>
+                <source src="https://hexa0915.github.io/storage/videos/preview.mp4" type="video/mp4">
+            </video>
+        </div>
     </body>
 </html>
