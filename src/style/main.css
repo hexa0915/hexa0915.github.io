@@ -70,7 +70,8 @@ body {
 
 #preview-cover {
     z-index: -9998;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0);
+    opacity: 0.4;
 }
 
 @font-face {

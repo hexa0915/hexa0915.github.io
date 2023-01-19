@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 previewVideo.style.transform = `scale(1)`
                 previewCover.style.transform = `scale(1)`
             }
+        } else {
+            previewCover.style.opacity = 0.2
         }
 
         requestAnimationFrame(previewSize)
