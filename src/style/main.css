@@ -29,31 +29,32 @@ body {
     width: 100vw;
     height: 100vh;
     
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: black;
 }
 
-.preview {
+#preview {
     width: 100vw;
-    height: calc(100vw / 16 * 9);
+    height: 100vh;
     user-select: none;
     
-    filter: blur(3px);
+    filter: blur(-5px);
     position: absolute;
     top: 0px;
     z-index: -9999;
-    transform: translateY(32px) scale(1.1);
+
+    background-color: black;
+    border-width: 0px;
 }
 
-.preview-cover {
+#preview-cover {
     z-index: -9998;
     position: absolute;
     display: inline-block;
     width: 100vw;
-    height: calc(100vw / 16 * 9);
+    height: 100vh;
     left: 0px;
     top: 0px;
-    transform: translateY(32px) scale(1.1);
     background-color: rgba(0, 0, 0, 0.2);
     user-select: none;
 }
