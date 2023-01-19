@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 previewCover.style.transform = `scale(1)`
             }
         } else {
-            document.write("Mobile")
             previewCover.style.opacity = 0.2
         }
 
